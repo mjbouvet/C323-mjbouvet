@@ -1,0 +1,9 @@
+-sceneWillResignActive when going from the app to the home screen while hitting the home button, it turns from green
+to yellow in this case, it also activates from the app switcher
+
+-sceneWillEnterForeground is accessed when opening the app from the home menu, it turns blue then green
+
+-sceneDidEnterBackground is accessed when having another app open in the app switcher and the Lab 03 app is not on the 
+foreground, i.e. it is not the app being looked at
+
+-SceneDidBecomeActive is when the app is open on the main screen, it occurs whenever the app is open
