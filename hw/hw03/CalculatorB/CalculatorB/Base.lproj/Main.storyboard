@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="CalculatorB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVv-2x-NBg">
+                                <rect key="frame" x="16" y="20" width="343" height="98"/>
+                                <color key="backgroundColor" red="1" green="0.99890464540000001" blue="0.39766335489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5s-Id-V4J">
+                                <rect key="frame" x="32" y="20" width="311" height="98"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="sR8-eE-NO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2H-SZ-RAQ" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="16" y="138" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.65090793371200562" green="0.65102207660675049" blue="0.65090072154998779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZCc-1R-vff"/>
+                                    <constraint firstAttribute="height" constant="75" id="pms-44-dLX"/>
+                                </constraints>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NcJ-8W-l7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM1-0q-TKE" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="16" y="461" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rcc-e4-H8V"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjj-s4-mcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZb-Yq-SJq" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="16" y="556" width="190" height="75"/>
+                                <color key="backgroundColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="WrH-FN-Ej9"/>
+                                    <constraint firstAttribute="height" constant="75" id="x7a-N7-SfY"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2li-YM-wgp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rul-GZ-vuV" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="259" y="556" width="100" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.58255845308303833" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ESq-E7-FIT"/>
+                                    <constraint firstAttribute="height" constant="75" id="JOZ-Ea-6OW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzf-71-4Kz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-Gk-6vT" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="259" y="461" width="100" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.58255845309999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="h7H-U3-0rJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="moh-aG-vC2"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQO-jf-wRR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h0-eJ-FOV" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="259" y="366" width="100" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.58255845309999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6gl-mY-STU"/>
+                                    <constraint firstAttribute="height" constant="75" id="kQd-U4-62h"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUP-O9-J2w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="D5s-Id-V4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4jL-8d-ygK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVv-2x-NBg" secondAttribute="trailing" constant="16" id="74D-SC-Xym"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2h0-eJ-FOV" secondAttribute="trailing" constant="16" id="Bp4-Zo-t1m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aZb-Yq-SJq" secondAttribute="bottom" constant="36" id="DQg-xj-P4K"/>
+                            <constraint firstItem="aZb-Yq-SJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H9s-50-10k"/>
+                            <constraint firstItem="Rul-GZ-vuV" firstAttribute="top" secondItem="SNU-Gk-6vT" secondAttribute="bottom" constant="20" id="OPR-eK-EL0"/>
+                            <constraint firstItem="KM1-0q-TKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OQc-VB-hcd"/>
+                            <constraint firstItem="SNU-Gk-6vT" firstAttribute="top" secondItem="2h0-eJ-FOV" secondAttribute="bottom" constant="20" id="PrW-8U-x0g"/>
+                            <constraint firstItem="aZb-Yq-SJq" firstAttribute="top" secondItem="KM1-0q-TKE" secondAttribute="bottom" constant="20" id="QCS-ks-AhQ"/>
+                            <constraint firstItem="q2H-SZ-RAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xbs-pr-DMF"/>
+                            <constraint firstItem="KM1-0q-TKE" firstAttribute="height" secondItem="q2H-SZ-RAQ" secondAttribute="height" id="XjN-Vf-gW3"/>
+                            <constraint firstItem="pVv-2x-NBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YOn-1h-6C2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SNU-Gk-6vT" secondAttribute="trailing" constant="16" id="ayc-Z0-iXp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rul-GZ-vuV" secondAttribute="bottom" constant="36" id="g6P-lH-Oix"/>
+                            <constraint firstItem="pVv-2x-NBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gko-rj-v4J"/>
+                            <constraint firstItem="q2H-SZ-RAQ" firstAttribute="top" secondItem="D5s-Id-V4J" secondAttribute="bottom" constant="20" id="oBL-hT-2cB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rul-GZ-vuV" secondAttribute="trailing" constant="16" id="ogW-4u-XA1"/>
+                            <constraint firstItem="D5s-Id-V4J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qBG-JK-PJL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5s-Id-V4J" secondAttribute="trailing" constant="32" id="tdb-m2-nog"/>
+                            <constraint firstItem="pVv-2x-NBg" firstAttribute="height" secondItem="D5s-Id-V4J" secondAttribute="height" id="xk8-WP-0Mj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="calcDisplay" destination="D5s-Id-V4J" id="afG-xD-dsp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64.799999999999997" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
