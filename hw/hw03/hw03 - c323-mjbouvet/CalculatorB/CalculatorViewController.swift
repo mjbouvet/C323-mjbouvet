@@ -28,7 +28,7 @@ class CalculatorViewController: UIViewController {
     @IBAction func pressedOperation(_ sender: Any){
         if((sender as AnyObject).currentTitle == "+"){
             if(numberIsBeingEntered == true){
-                myModel.setSecondOperand(sOperand: Int(calcDisplay.text ?? "0", radix : 2)!)
+                myModel.setSecondOperand(sOperand: Int(calcDisplay.text ?? "0", radix : 2)!) //conversion method from https://stackoverflow.com/questions/26181221/how-to-convert-a-decimal-number-to-binary-in-swift
                 myModel.setFirstOperand(fOperand: myModel.performOperation(oper: myModel.operation!))
                 calcDisplay.text = ""
                 myModel.setOperation(oper: "+")
