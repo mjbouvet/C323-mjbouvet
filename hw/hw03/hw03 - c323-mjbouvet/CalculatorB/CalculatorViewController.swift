@@ -23,6 +23,7 @@ class CalculatorViewController: UIViewController {
     }
     
     
+    
     @IBAction func pressedOperation(_ sender: Any){
         if((sender as AnyObject).currentTitle == "+"){
             myModel.setOperation(oper: "+")
@@ -36,13 +37,25 @@ class CalculatorViewController: UIViewController {
             calcDisplay.text = ""
             numberIsBeingEntered = true
         }
-        if((sender as AnyObject).currentTitle == "="){
+        else if((sender as AnyObject).currentTitle == "="){
             myModel.setSecondOperand(sOperand: Int(calcDisplay.text ?? "0", radix : 2)!)
             calcDisplay.text = String(myModel.performOperation(oper: myModel.operation!), radix: 2)
             numberIsBeingEntered = false
         }
-        if((sender as AnyObject).currentTitle == "AC"){
+        else if((sender as AnyObject).currentTitle == "AC"){
             calcDisplay.text = ""
+        }
+        else if((sender as AnyObject).currentTitle == "mc"){
+            myModel.memory = 0
+        }
+        else if((sender as AnyObject).currentTitle == "mr"){
+            calcDisplay.text = String(myModel.memory, radix: 2)
+        }
+        else if((sender as AnyObject).currentTitle == "m+"){
+            myModel.memory += Int(calcDisplay.text ?? "0", radix : 2)!
+        }
+        else if((sender as AnyObject).currentTitle == "m-"){
+            myModel.memory -= Int(calcDisplay.text ?? "0", radix : 2)!
         }
         
     }

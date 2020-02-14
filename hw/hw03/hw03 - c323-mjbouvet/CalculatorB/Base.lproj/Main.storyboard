@@ -117,9 +117,66 @@
                                     <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUP-O9-J2w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-CC-RSH" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="259" y="138" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="U5w-Xx-Q1G"/>
+                                    <constraint firstAttribute="width" constant="100" id="uxC-0u-sad"/>
+                                </constraints>
+                                <state key="normal" title="mr">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUS-51-yg5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzx-nB-xLr" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="137" y="221" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="QE0-r8-sek"/>
+                                    <constraint firstAttribute="width" constant="100" id="bzx-eU-Mf6"/>
+                                </constraints>
+                                <state key="normal" title="m-">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Emv-mu-Wzq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Go-aA-gYe" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="259" y="221" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CjS-KL-RMz"/>
+                                    <constraint firstAttribute="height" constant="75" id="p2D-vR-xDK"/>
+                                </constraints>
+                                <state key="normal" title="m+">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6b-Nn-s8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-dT-xGo" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="137" y="138" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.12939286231994629" green="0.12942266464233398" blue="0.12939092516899109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Ff8-HF-a4z"/>
+                                    <constraint firstAttribute="width" constant="100" id="mFt-zt-32r"/>
+                                </constraints>
+                                <state key="normal" title="mc">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW6-cO-XUD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="4Go-aA-gYe" firstAttribute="top" secondItem="JVn-CC-RSH" secondAttribute="bottom" constant="8" id="1Mu-z4-C4d"/>
                             <constraint firstItem="D5s-Id-V4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4jL-8d-ygK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVv-2x-NBg" secondAttribute="trailing" constant="16" id="74D-SC-Xym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2h0-eJ-FOV" secondAttribute="trailing" constant="16" id="Bp4-Zo-t1m"/>
@@ -129,16 +186,23 @@
                             <constraint firstItem="KM1-0q-TKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OQc-VB-hcd"/>
                             <constraint firstItem="SNU-Gk-6vT" firstAttribute="top" secondItem="2h0-eJ-FOV" secondAttribute="bottom" constant="20" id="PrW-8U-x0g"/>
                             <constraint firstItem="aZb-Yq-SJq" firstAttribute="top" secondItem="KM1-0q-TKE" secondAttribute="bottom" constant="20" id="QCS-ks-AhQ"/>
+                            <constraint firstItem="rzx-nB-xLr" firstAttribute="top" secondItem="DWN-dT-xGo" secondAttribute="bottom" constant="8" id="R13-X3-IKx"/>
                             <constraint firstItem="q2H-SZ-RAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xbs-pr-DMF"/>
                             <constraint firstItem="KM1-0q-TKE" firstAttribute="height" secondItem="q2H-SZ-RAQ" secondAttribute="height" id="XjN-Vf-gW3"/>
                             <constraint firstItem="pVv-2x-NBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YOn-1h-6C2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SNU-Gk-6vT" secondAttribute="trailing" constant="16" id="ayc-Z0-iXp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Go-aA-gYe" secondAttribute="trailing" constant="16" id="f8z-3Z-PVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JVn-CC-RSH" secondAttribute="trailing" constant="16" id="fyn-bj-dDe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rul-GZ-vuV" secondAttribute="bottom" constant="36" id="g6P-lH-Oix"/>
                             <constraint firstItem="pVv-2x-NBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gko-rj-v4J"/>
+                            <constraint firstItem="DWN-dT-xGo" firstAttribute="top" secondItem="pVv-2x-NBg" secondAttribute="bottom" constant="20" id="kNT-3Z-GYa"/>
                             <constraint firstItem="q2H-SZ-RAQ" firstAttribute="top" secondItem="D5s-Id-V4J" secondAttribute="bottom" constant="20" id="oBL-hT-2cB"/>
+                            <constraint firstItem="JVn-CC-RSH" firstAttribute="top" secondItem="pVv-2x-NBg" secondAttribute="bottom" constant="20" id="oa3-nZ-c1G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rul-GZ-vuV" secondAttribute="trailing" constant="16" id="ogW-4u-XA1"/>
+                            <constraint firstItem="JVn-CC-RSH" firstAttribute="leading" secondItem="DWN-dT-xGo" secondAttribute="trailing" constant="22" id="pTa-fY-zlp"/>
                             <constraint firstItem="D5s-Id-V4J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qBG-JK-PJL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5s-Id-V4J" secondAttribute="trailing" constant="32" id="tdb-m2-nog"/>
+                            <constraint firstItem="4Go-aA-gYe" firstAttribute="leading" secondItem="rzx-nB-xLr" secondAttribute="trailing" constant="22" id="whR-m1-t7r"/>
                             <constraint firstItem="pVv-2x-NBg" firstAttribute="height" secondItem="D5s-Id-V4J" secondAttribute="height" id="xk8-WP-0Mj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

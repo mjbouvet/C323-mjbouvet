@@ -16,6 +16,7 @@ class CalcModel{
     var firstOperand : Int!
     var secondOperand : Int!
     var operation : String!
+    var memory = 0
     
     public func setFirstOperand(fOperand : Int){
         firstOperand = fOperand
