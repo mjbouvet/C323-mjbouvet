@@ -33,11 +33,11 @@ class CalcModel{
         else if(oper == "-"){
             operation = "-"
         }
-        else if(oper == "AC"){
-            operation = "AC"
+        else if(oper == "/"){
+            operation = "/"
         }
-        else{
-            operation = "="
+        else if(oper == "*"){
+            operation = "*"
         }
     }
     
@@ -46,8 +46,14 @@ class CalcModel{
         if(oper == "+"){
             return firstOperand + secondOperand
         }
-        else{
+        else if(oper == "-"){
             return firstOperand - secondOperand
+        }
+        else if(oper == "/"){
+            return firstOperand / secondOperand
+        }
+        else{
+            return firstOperand * secondOperand
         }
     }
     

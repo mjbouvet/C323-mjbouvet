@@ -173,13 +173,61 @@
                                     <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW6-cO-XUD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNm-xr-cOk" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="16" y="221" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.65098488330841064" green="0.65097230672836304" blue="0.65098077058792114" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Mjo-zo-ESh"/>
+                                    <constraint firstAttribute="height" constant="75" id="npG-sP-QIO"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="plus.slash.minus" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxK-YQ-3Pr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPl-0Q-d3x" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="137" y="461" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.9940914511680603" green="0.58796471357345581" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Mbs-g3-pCb"/>
+                                    <constraint firstAttribute="width" constant="100" id="cMg-70-YoK"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="multiply" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVO-ew-L3w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-dv-9QO" customClass="MBCalculatorButton" customModule="CalculatorB" customModuleProvider="target">
+                                <rect key="frame" x="137" y="366" width="100" height="75"/>
+                                <color key="backgroundColor" red="0.9940914511680603" green="0.58796471357345581" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Ns7-nr-qen"/>
+                                    <constraint firstAttribute="width" constant="100" id="f7H-Zl-L7E"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="divide" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujJ-Iu-7i9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="4Go-aA-gYe" firstAttribute="top" secondItem="JVn-CC-RSH" secondAttribute="bottom" constant="8" id="1Mu-z4-C4d"/>
                             <constraint firstItem="D5s-Id-V4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4jL-8d-ygK"/>
+                            <constraint firstItem="SNU-Gk-6vT" firstAttribute="leading" secondItem="oPl-0Q-d3x" secondAttribute="trailing" constant="22" id="59r-f3-W7m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVv-2x-NBg" secondAttribute="trailing" constant="16" id="74D-SC-Xym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2h0-eJ-FOV" secondAttribute="trailing" constant="16" id="Bp4-Zo-t1m"/>
+                            <constraint firstItem="cNm-xr-cOk" firstAttribute="top" secondItem="q2H-SZ-RAQ" secondAttribute="bottom" constant="8" id="Cae-jw-7P4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aZb-Yq-SJq" secondAttribute="bottom" constant="36" id="DQg-xj-P4K"/>
                             <constraint firstItem="aZb-Yq-SJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H9s-50-10k"/>
                             <constraint firstItem="Rul-GZ-vuV" firstAttribute="top" secondItem="SNU-Gk-6vT" secondAttribute="bottom" constant="20" id="OPR-eK-EL0"/>
@@ -189,14 +237,18 @@
                             <constraint firstItem="rzx-nB-xLr" firstAttribute="top" secondItem="DWN-dT-xGo" secondAttribute="bottom" constant="8" id="R13-X3-IKx"/>
                             <constraint firstItem="q2H-SZ-RAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xbs-pr-DMF"/>
                             <constraint firstItem="KM1-0q-TKE" firstAttribute="height" secondItem="q2H-SZ-RAQ" secondAttribute="height" id="XjN-Vf-gW3"/>
+                            <constraint firstItem="aZb-Yq-SJq" firstAttribute="top" secondItem="oPl-0Q-d3x" secondAttribute="bottom" constant="20" id="YC8-54-rBt"/>
                             <constraint firstItem="pVv-2x-NBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YOn-1h-6C2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SNU-Gk-6vT" secondAttribute="trailing" constant="16" id="ayc-Z0-iXp"/>
+                            <constraint firstItem="2h0-eJ-FOV" firstAttribute="leading" secondItem="VwU-dv-9QO" secondAttribute="trailing" constant="22" id="eZV-aK-u2B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Go-aA-gYe" secondAttribute="trailing" constant="16" id="f8z-3Z-PVQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JVn-CC-RSH" secondAttribute="trailing" constant="16" id="fyn-bj-dDe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rul-GZ-vuV" secondAttribute="bottom" constant="36" id="g6P-lH-Oix"/>
                             <constraint firstItem="pVv-2x-NBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gko-rj-v4J"/>
+                            <constraint firstItem="oPl-0Q-d3x" firstAttribute="top" secondItem="VwU-dv-9QO" secondAttribute="bottom" constant="20" id="kHS-QA-abR"/>
                             <constraint firstItem="DWN-dT-xGo" firstAttribute="top" secondItem="pVv-2x-NBg" secondAttribute="bottom" constant="20" id="kNT-3Z-GYa"/>
                             <constraint firstItem="q2H-SZ-RAQ" firstAttribute="top" secondItem="D5s-Id-V4J" secondAttribute="bottom" constant="20" id="oBL-hT-2cB"/>
+                            <constraint firstItem="cNm-xr-cOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oID-GA-Zav"/>
                             <constraint firstItem="JVn-CC-RSH" firstAttribute="top" secondItem="pVv-2x-NBg" secondAttribute="bottom" constant="20" id="oa3-nZ-c1G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rul-GZ-vuV" secondAttribute="trailing" constant="16" id="ogW-4u-XA1"/>
                             <constraint firstItem="JVn-CC-RSH" firstAttribute="leading" secondItem="DWN-dT-xGo" secondAttribute="trailing" constant="22" id="pTa-fY-zlp"/>
@@ -216,4 +268,9 @@
             <point key="canvasLocation" x="-64.799999999999997" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="divide" catalog="system" width="64" height="50"/>
+        <image name="multiply" catalog="system" width="64" height="54"/>
+        <image name="plus.slash.minus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
