@@ -13,28 +13,41 @@ class CalcModel{
         
     }
     
-    var firstOperand : Int?
-    var secondOperand : Int?
-    var operation : Operation?
+    var firstOperand : Int!
+    var secondOperand : Int!
+    var operation : String!
     
-    public func setFirstOperand(){
-        firstOperand = 2
+    public func setFirstOperand(fOperand : Int){
+        firstOperand = fOperand
     }
     
-    public func setSecondOperand(){
-        secondOperand = 3
+    public func setSecondOperand(sOperand : Int){
+        secondOperand = sOperand
     }
     
-    public func setOperation(){
-        operation = .add
+    public func setOperation(oper : String){
+        if(oper == "+"){
+            operation = "+"
+        }
+        else if(oper == "-"){
+            operation = "-"
+        }
+        else if(oper == "AC"){
+            operation = "AC"
+        }
+        else{
+            operation = "="
+        }
     }
     
-    public func performOperation(){
-        
+    
+    public func performOperation(oper : String) -> Int{
+        if(oper == "+"){
+            return firstOperand + secondOperand
+        }
+        else{
+            return firstOperand - secondOperand
+        }
     }
     
-    enum Operation:String {
-        case add = "+"
-        case subtract = "-"
-    }
 }
