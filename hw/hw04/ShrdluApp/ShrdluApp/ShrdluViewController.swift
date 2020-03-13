@@ -32,6 +32,8 @@ class InteractionViewController: UIViewController {
             }
             }
         }
+        dataEntry.text = "" //resets the text field's text
+        dataEntry.resignFirstResponder() //dismisses the keyboard
     }
     
     override func viewDidLoad() {
