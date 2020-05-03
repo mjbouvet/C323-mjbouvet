@@ -1,4 +1,11 @@
+-I completed most of the model and the table view that is the second tab of the app
 
+=I thought the nested dictionaries were a clever way of pairing months categories and their values
+
+=No issues with the tasks or software tools.
+
+
+Team Evaluation:
 Which Team member contributed most to this assignment?
 -I believe we all contributed the same to this assignment
 
